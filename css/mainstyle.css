@@ -54,7 +54,7 @@ header {
 .logo img {
   width: 120px;
   height: auto;
-  padding-top: 10px;
+  padding-top: 0px;
   transition: transform 0.3s ease;
 }
 
@@ -170,8 +170,8 @@ header {
 .menu li.highlight a {
   display: inline-block;
   font-size: 27px;
-  background: #C08457;          /* nâu gạch nhạt */
-  color: #99422a;               /* trắng ngà */
+  background: var(--teal);          /* nâu gạch nhạt */
+  color: #f2c342;               /* trắng ngà */
   padding: 7px 17px;
   border-radius: 20%;
   font-weight: 700;
@@ -185,7 +185,7 @@ header {
 .menu li.highlight a:hover {
   background: var(--teal)   ;       /* nâu đậm hơn */
   color: #ffffff;
-  box-shadow: 0 0 15px rgba(163, 112, 73, 0.5);
+  box-shadow: 0 0 15px rgba(18, 59, 26, 0.5);
   transform: scale(1.08);
   animation: none;
 }
@@ -194,13 +194,13 @@ header {
 @keyframes softPulse {
   0%, 100% {
     transform: scale(1);
-    background-color: var(--beige-dark);
-    box-shadow: 0 0 6px rgba(192, 132, 87, 0.3);
+    background-color: #116466;
+    box-shadow: 0 0 6px rgba(21, 92, 24, 0.3);
   }
   70% {
     transform: scale(1.08);
-    background-color: var(--beige-dark); /* tông sáng hơn */
-    box-shadow: 0 0 12px rgba(217, 166, 121, 0.5);
+    background-color: var(--teal); /* tông sáng hơn */
+    box-shadow: 0 0 12px rgba(31, 88, 36, 0.5);
   }
 }
 
