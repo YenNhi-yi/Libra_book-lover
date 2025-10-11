@@ -30,3 +30,24 @@ $(document).ready(function(){
     }
   });
 });
+
+var modal = $('#loginModal');
+
+  // Khi click icon tài khoản
+  $('.header-icons .icon-link[title="Tài khoản"]').on('click', function(e) {
+    e.preventDefault();
+    modal.fadeIn(200).css('display', 'flex');
+  });
+
+  // Khi click nút X
+  $('.modal .close').on('click', function() {
+    modal.fadeOut(200);
+  });
+
+  // Khi click ra ngoài modal
+  $(window).on('click', function(e) {
+    if ($(e.target).is(modal)) {
+      modal.fadeOut(200);
+    }
+  });
+
