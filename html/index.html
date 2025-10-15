@@ -8,50 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 </head>
 <body>
-    <header>
-        <div class="header-main">
-            <div class="header-left">
-                <div class="header-icon icon-link">
-                    <a href="#"><img src="../assets/images/home.png" alt="trang chủ" width="60px" height="60px"/></a>
-                </div>
-                <div class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <p class="highlight"><a href="#">ĐẤU GIÁ</a></p>
-            </div>
-
-            <div class="header-center">
-                <a href="#"> <img src="../assets/images/Libra_logo.png" alt="Libra_logo"/>
+    <header class="header" id="mainHeader">
+        <div class="header__main">
+            <!-- LEFT -->
+            <div class="header__left">
+                <a href="#" class="header__action header__action-shop">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shop Online
                 </a>
             </div>
 
-            <div class="header-right">
-                <form class="search" method="get" action="#">
-                    <input type="search" name="search" class="search-input" placeholder="Tìm kiếm..." required>
-                    <button type="submit" class="search-btn">
-                        <img src="../assets/images/search.png"/>
-                    </button>
-                </form>
-    
-                <div class="header-icons">
-                    <!--<a href="#" class="icon-link" title="Yêu thích">
-                        <img src="../assets/images/heart.png" alt="Yêu thích"/>-->
-                    </a>
-                    <a href="#" class="icon-link cart" title="Giỏ hàng">
-                        <img src="../assets/images/cart.png" alt="Giỏ hàng">
-                        <span class="cart-count">0</span>
-                    </a>
-                    <a href="#" class="icon-link" title="Tài khoản">
-                        <img src="../assets/images/user.png" alt="Tài khoản">
-                    </a>
-                </div>
+            <!-- CENTER -->
+            <div class="header__center">
+                <a href="#" class="header__logo">
+                    <img src="../assets/images/Libra_logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="header__right">
+                <a href="#" class="header__action header__action-account">
+                    <i class="fas fa-user"></i>
+                    Account
+                </a>
             </div>
         </div>
+
+        <nav class="header__navigation">
+            <ul>
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">SÁCH CŨ</a></li>
+                <li><a href="#">SÁCH HIỂM</a></li>
+                <li><a href="#">ĐẤU GIÁ</a></li>
+                <li><a href="#">CHÍNH SÁCH</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
     </header>
     
     <div class="video-wrapper">
@@ -85,31 +84,27 @@
         </div>
     </div>
 
-    
-    <div class="title-container"> <!--Giới Thiệu-->
-        <h2> Offers & Policies </h2>
-    </div>
-    <div>
-        <h3 align="center">Chào mừng bạn đến với Libra Lover – không gian dành riêng cho những người yêu sách!</h3>
-    </div>
-    <div class="notice-box">
-        <div class="notice-content">
-            <ul>
-                <li> <img src="../Assets/images/icon/heart.png" width="30" height="30"/>
-                    <strong>Giảm 10% cho đơn hàng đầu tiên</strong>&nbsp;khi thanh toán trực tuyến qua VNPay, Momo. </li>
-                <li><img src="../Assets/images/icon/heart.png" width="30" height="30"/>
-                    Miễn phí giao hàng toàn quốc cho đơn hàng từ <strong>&nbsp;299.000đ trở lên.</strong></li>
-                <li><img src="../Assets/images/icon/heart.png" width="30" height="30"/>
-                    Dịch vụ giao nhanh trong 24 giờ tại Hà Nội và TP.HCM, đảm bảo an toàn và nguyên vẹn từng ấn phẩm. </li>
-                <li><img src="../Assets/images/icon/heart.png" width="30" height="30"/>
-                    <strong>Miễn phí đổi trả trong 7 ngày</strong>, giúp bạn an tâm chọn lựa tác phẩm yêu thích.</li>
-                <li><img src="../Assets/images/icon/heart.png" width="30" height="30"/>
-                    <strong>Chương trình tri thức nhân đôi </strong>&nbsp;– ưu đãi nhân ba: Mua 2 đầu sách: giảm 5% ; Mua 3 đầu sách: giảm 10% </li>
-                <li><img src="../Assets/images/icon/heart.png" width="30" height="30"/>
-                    <strong>HƯỚNG DẪN MUA SÁCH:</strong>&nbsp;Đặt mua trực tiếp trên website hoặc inbox Messenger của chúng tôi. </li>
-            </ul>
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <!-- Bên trái -->
+            <div class="welcome-left">
+            <h1>
+                <span class="italic"> &nbsp;Welcome to the</span><br>
+                <img src="../assets/images/libra.png"/>
+            </h1>
+            </div>
+
+            <!-- Bên phải -->
+            <div class="welcome-right">
+                <p>
+                    Welcome to Libra Book-lover. Enjoy time out and find beautiful, rare books, 
+                    vintage collections, and timeless classics. Discover stories that inspire your imagination 
+                    and enrich your mind.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+
 
     <section class="bestselling-section">
         <h2 class="bestselling-title">BESTSELLING BOOKS</h2>
@@ -148,11 +143,44 @@
         </div>
     </section>
 
+    <section class="book-event">
+        <div class="event-image">
+            <img src="../assets/images/Book_event/exchange.jpg" alt="Book Exchange Day">
+        </div>
+        <div class="event-content">
+            <img class="event-icon" src="../assets/images/Book_event/icon_ex.png" alt="Book icon">
+            <h2 class="event-title">Book Exchange Day</h2>
+            <hr/><br/>
+            <p class="content">
+            “Cũ với bạn, mới với ai – cùng nhau viết tiếp hành trình của những trang sách.”
+            </p>
+            <a href="#" class="event-btn">Tìm hiểu thêm</a>
+        </div>
+    </section>
+
+    <section class="event memory-event">
+        <div class="event-content">
+            <img class="event-icon" src="../assets/images/Book_event/icon_ct.png" alt="Cuo thi icon">
+            <h2 class="event-title">Ký niệm trang sách cũ</h2>
+            <hr/><br/>
+            <p class="content">
+            Mỗi trang sách là một ký ức. Hãy kể câu chuyện của bạn cùng cuốn sách đã đi qua năm tháng.
+            </p>
+            <a href="#" class="event-btn">Tham gia ngay</a>
+        </div>
+        <div class="event-image">
+            <img src="../assets/images/Book_event/cuoc_thi.png" alt="Cuộc thi Ký ức cùng trang sách cũ">
+        </div>
+    </section>
+
+
+
+
     <div class="title-container"> <!--Giới Thiệu-->
         <h2>About US</h2>
     </div>
     <div class="notice-box">
-        <div class="notice-content">
+        <div class="content">
             <p>Libra là không gian dành cho những người trân quý sách – nơi những cuốn sách cũ, sách hiếm được tìm thấy, chia sẻ và sống lại trong tay những người yêu chúng.</p>
             <p>Chúng tôi mong muốn tạo nên một cộng đồng kết nối người đọc và người bán, nơi mỗi cuốn sách đều mang trong mình giá trị và câu chuyện riêng.Tại Libra, bạn có thể mua bán, trao đổi, đấu giá và trò chuyện cùng những tâm hồn đồng điệu, cùng nhau gìn giữ và lan tỏa tình yêu với tri thức.</p>
             <h4 align="center">Libra – Nơi những cuốn sách cũ kể lại hành trình mới.</h4>
@@ -201,7 +229,7 @@
             © 2025 Libra. All rights reserved.
         </div>
     </footer>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- File JS custom của bạn -->

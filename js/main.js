@@ -1,3 +1,11 @@
+window.addEventListener("scroll", function() {
+  const header = document.getElementById("mainHeader");
+  if (window.scrollY > 80) {
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
+});
 $(document).ready(function () {
   const tabs = document.querySelectorAll(".hero-tab");
   const videos = document.querySelectorAll(".hero-video");
