@@ -186,11 +186,11 @@ body {
 }
 
 
-/* ========== SLIDE ========== */
+/* ========== VIDEO ========== */
 .video-wrapper {
   position: relative;
   width: 100%;
-  height: auto; /* ✅ khung sẽ tự cao theo video đang active */
+  height: auto; /* khung sẽ tự cao theo video đang active */
   overflow: hidden;
   background-color: #000;
   display: flex;
